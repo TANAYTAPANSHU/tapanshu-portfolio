@@ -1394,6 +1394,47 @@
       /* ═══════════════════════════════════
    RESPONSIVE
 ═══════════════════════════════════ */
+      /* ═══════════════════════════════════
+   LATEST WORKS
+═══════════════════════════════════ */
+      .pgrid.p4 {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .ptitle a {
+        color: inherit;
+        text-decoration: none;
+      }
+      .wfoot {
+        padding-top: 0.6rem;
+        font-size: 0.62rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .wlink {
+        color: var(--accent);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition:
+          border-color 0.25s,
+          color 0.5s;
+      }
+      .wlink:hover {
+        border-color: var(--accent);
+      }
+      .snap {
+        margin-top: 2rem;
+        font-size: 0.62rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--text-muted);
+        transition: color 0.5s;
+      }
+      @media (max-width: 1200px) {
+        .pgrid.p4 {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
       @media (max-width: 900px) {
         .hero {
           grid-template-columns: 1fr;
@@ -1438,6 +1479,9 @@
           padding-top: 2rem;
         }
         .pgrid {
+          grid-template-columns: 1fr;
+        }
+        .pgrid.p4 {
           grid-template-columns: 1fr;
         }
         .slayout {
@@ -1486,6 +1530,7 @@
         <a href="#metrics">Metrics</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
+        <a href="#works">Works</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </div>
@@ -1509,11 +1554,14 @@
           <div id="nl2" class="l2"></div>
         </div>
         <p class="hdesc">
-          A product-minded software engineer with a strong focus on end-to-end
+          I have worked on high-scale consumer apps and supply chain products,
+          understanding each domain and building products across e-commerce,
+          edtech and job-platform industries. A product-minded software engineer
+          with a strong focus on end-to-end
           ownership and zero-to-one problem solving. I thrive in
           cross-functional environments, collaborating with stakeholders to
           build features that drive real business metrics. Always learning,
-          currently specializing in React Native, JSI, Next.js, and Python,
+          currently specializing in React Native, JSI, Next.js, Node.js, and Python,
           while continuously expanding my stack and impact.
         </p>
         <div class="hctas">
@@ -1537,6 +1585,11 @@
           <div class="slabel">Bundle Size Saved</div>
           <div class="sval">803 KB</div>
           <div class="ssub">Redux → Zustand migration</div>
+        </div>
+        <div class="hcard cg mag">
+          <div class="slabel">Workforce Utilization</div>
+          <div class="sval">53% → 80%</div>
+          <div class="ssub">Packerman Metrics analytics platform</div>
         </div>
       </div>
 
@@ -1596,121 +1649,89 @@
       </div>
       <div class="mgrid rc">
         <div class="mc">
-          <div class="ma">Growth · Google Phone Hint</div>
-          <div class="mn cu" data-t="6.70" data-pre="+" data-su="%">+6.70%</div>
+          <div class="ma">Workforce · Packerman Metrics</div>
+          <div class="mn" style="font-size: 2.4rem">53% → 80%</div>
           <div class="md">
-            FTB Signups — Non-Truecaller cohort (50% Android installs)
+            Warehouse workforce utilization, lifted by a near-real-time metrics
+            pipeline
           </div>
-        </div>
-        <div class="mc">
-          <div class="ma">Growth · FTB Activations</div>
-          <div class="mn o cu" data-t="6.58" data-pre="+" data-su="%">
-            +6.58%
-          </div>
-          <div class="md">First Order Purchase — Non-Truecaller cohort</div>
-        </div>
-        <div class="mc">
-          <div class="ma">Growth · Platform-wide</div>
-          <div class="mn p cu" data-t="2.73" data-pre="+" data-su="%">
-            +2.73%
-          </div>
-          <div class="md">Overall FTB Signups across entire platform</div>
         </div>
         <div class="mc">
           <div class="ma">Cost Savings · Fraud Detection</div>
-          <div class="mn cu" data-t="400" data-pre="$" data-su="K">$400K</div>
+          <div class="mn cu" data-pre="$" data-t="400" data-su="K">$400K</div>
           <div class="md">
-            Annual savings replacing vendor with in-house SDK
+            Annual savings from replacing a vendor with an in-house SDK
           </div>
         </div>
         <div class="mc">
-          <div class="ma">Performance · Product Cards</div>
-          <div class="mn o" style="font-size: 2.8rem">−0.5ms</div>
-          <div class="md">
-            Per-card render time from PCCarouselView refactor
-          </div>
+          <div class="ma">Accuracy · Fraud Detection SDK</div>
+          <div class="mn o cu" data-pre="&gt;" data-t="99" data-su="%">&gt;99%</div>
+          <div class="md">Accuracy of the in-house device-fingerprinting SDK</div>
         </div>
         <div class="mc">
-          <div class="ma">App Size · Redux → Zustand</div>
-          <div class="mn p cu" data-t="803" data-su=" KB">803 KB</div>
-          <div class="md">
-            JS Bundle cut. APK reduced by 398 KB. Cross-team migration.
-          </div>
+          <div class="ma">Revenue · Monet Asset</div>
+          <div class="mn p cu" data-pre="~₹" data-t="10" data-su="L/day" style="font-size: 2.4rem">~₹10L/day</div>
+          <div class="md">Daily ad revenue from the configurable contextual ad widget</div>
         </div>
         <div class="mc">
-          <div class="ma">Monet · Ad Revenue</div>
-          <div class="mn cu" data-t="10" data-su="L/day">10L/day</div>
-          <div class="md">
-            Daily ad revenue from Single Premium Contextual Ad Widget
-          </div>
+          <div class="ma">AI Workflow · Token Usage</div>
+          <div class="mn o cu" data-pre="−" data-t="65" data-su="%">−65%</div>
+          <div class="md">Token usage cut after letting AI agents run and debug the app with agent-device</div>
         </div>
         <div class="mc">
-          <div class="ma">Supply Chain · Operations</div>
-          <div class="mn o" style="font-size: 2.8rem">100%</div>
-          <div class="md">
-            Took ownership of Pan-India Printing Feature roll-out, collaborating
-            with cross-functional teams to launch a critical remote printing
-            system nationwide.
-          </div>
+          <div class="ma">AI Workflow · Runtime Issues</div>
+          <div class="mn cu" data-pre="−" data-t="22" data-su="%">−22%</div>
+          <div class="md">Runtime issues reduced in the same AI debugging workflow</div>
         </div>
         <div class="mc">
-          <div class="ma">Engagement · Deals Widget</div>
-          <div class="mn p cu" data-t="30" data-su=" bps">+30 bps</div>
-          <div class="md">
-            ATCR improvement from Highlighted Deals (VIP) Widget
-          </div>
+          <div class="ma">AI Workflow · Out-of-Memory Issues</div>
+          <div class="mn p cu" data-pre="−" data-t="36" data-su="%">−36%</div>
+          <div class="md">Out-of-memory issues reduced in the same AI debugging workflow</div>
         </div>
         <div class="mc">
           <div class="ma">Search · ATCR</div>
-          <div class="mn cu" data-t="21" data-su=" bps">+21 bps</div>
-          <div class="md">
-            Avg ATCR via multi-tab search with React Query caching
-          </div>
+          <div class="mn o cu" data-pre="+" data-t="21" data-su=" bps">+21 bps</div>
+          <div class="md">ATCR lift from multi-tab scoped search with React Query caching</div>
         </div>
         <div class="mc">
-          <div class="ma">Scale · Event Migration</div>
-          <div class="mn o" style="font-size: 2.8rem">100+</div>
-          <div class="md">Analytics events migrated platform-wide</div>
+          <div class="ma">Auth · Re-login Success</div>
+          <div class="mn cu" data-pre="+" data-t="10" data-su="%">+10%</div>
+          <div class="md">Re-login success from the secure One-tap login system</div>
         </div>
         <div class="mc">
-          <div class="ma">App Size · Login UI</div>
-          <div class="mn p cu" data-t="160" data-su=" KB">~160 KB</div>
-          <div class="md">
-            JS bundle reduction from Login UI revamp, shipped on deadline
-          </div>
-        </div>
-
-        <div class="mc">
-          <div class="ma">Performance · LCP (Largest Contentful Paint)</div>
-          <div class="mn p cu" data-t="-1.2" data-su=" s">-1.2s</div>
-          <div class="md">
-            Largest Contentful Paint improvement from Next.js optimizations and
-            code-splitting on web
-          </div>
+          <div class="ma">Auth · Order Conversion</div>
+          <div class="mn p">~1.5%</div>
+          <div class="md">Order conversion lift from One-tap login</div>
         </div>
         <div class="mc">
-          <div class="ma">Search · Backend & Search Optimization</div>
-          <div class="mn cu" data-t="-10" data-su="% load">
-            10% reduction in load time
-          </div>
-          <div class="md">
-            Achieved by optimizing the search and recommendation backend,
-            resulting in a better overall user experience.
-          </div>
+          <div class="ma">App Size · Redux → Zustand</div>
+          <div class="mn o cu" data-t="803" data-su=" KB">803 KB</div>
+          <div class="md">JS bundle cut, with APK reduced by 398 KB across the consumer app</div>
         </div>
         <div class="mc">
-          <div class="ma">0 to 1 · App Growth & Scale</div>
-          <div class="mn o" style="font-size: 1.4rem">100K+ downloads</div>
-          <div class="md">
-            0-to-1 development and ownership of the Namaste Business app.
-          </div>
+          <div class="ma">Scale · Home Feed</div>
+          <div class="mn p cu" data-t="100" data-su="K+ DAU" style="font-size: 2.4rem">100K+ DAU</div>
+          <div class="md">Widget payloads served through a Redis-cached, server-driven UI backend</div>
         </div>
         <div class="mc">
-          <div class="ma">App Size · Login UI</div>
-          <div class="mn p cu" data-t="160" data-su=" KB">~160 KB</div>
-          <div class="md">
-            JS bundle reduction from Login UI revamp, shipped on deadline
-          </div>
+          <div class="ma">Warehouse · Inventory Shrinkage</div>
+          <div class="mn cu" data-pre="−" data-t="2" data-su="%">−2%</div>
+          <div class="md">Inventory shrinkage cut by improving the warehouse cycle-count flow</div>
+        </div>
+        <div class="mc">
+          <div class="ma">Performance · Dashboard Load Time</div>
+          <div class="mn o cu" data-pre="−" data-t="50" data-su="%">−50%</div>
+          <div class="md">Internal dashboard page load time, at Cradlewise</div>
+        </div>
+        <div class="mc">
+          <div class="ma">Scale · NextLevel App</div>
+          <div class="mn p" style="font-size: 1.6rem">1M+ downloads</div>
+          <div class="md">Led core modules: search, user profile and job listings</div>
+        </div>
+        <div class="mc">
+          <div class="ma">Growth · Mela &amp; Namaste Business</div>
+          <div class="mn cu" data-t="100" data-su="K+ downloads" style="font-size: 1.6rem">100K+ downloads</div>
+          <div class="md">Combined downloads across both mobile apps</div>
         </div>
       </div>
     </section>
@@ -1733,7 +1754,7 @@
         <div class="enav">
           <div class="etab active" data-t="zepto">
             <div class="etab-co">Zepto</div>
-            <div class="etab-ro">Software Engineer — Mobile</div>
+            <div class="etab-ro">Software Engineer</div>
             <div class="etab-dt">Dec 2024 – Present</div>
           </div>
           <div class="etab" data-t="unacademy">
@@ -1747,69 +1768,124 @@
             <div class="etab-dt">Apr 2022 – Nov 2023</div>
           </div>
           <div class="etab" data-t="mela">
-            <div class="etab-co">Mela (YC S-19)</div>
-            <div class="etab-ro">SWE Intern → Full-time</div>
+            <div class="etab-co">Mela (YC S19)</div>
+            <div class="etab-ro">Software Engineer (Intern → Full-time)</div>
             <div class="etab-dt">Mar 2021 – Mar 2022</div>
           </div>
         </div>
         <div class="econtent">
           <div class="epanel active" id="ep-zepto">
             <div class="ename">Zepto</div>
-            <div class="erole">Software Engineer — Mobile</div>
+            <div class="erole">Software Engineer</div>
             <div class="edur">Dec 2024 – Present · Bangalore, India</div>
             <ul class="ebullets">
               <li>
                 <span
-                  ><strong>Fraud Detection SDK:</strong> Built proprietary
-                  Device Fingerprinting SDK replacing a vendor, saving
-                  <strong>$400K USD annually</strong>.
+                  ><strong>Recognized twice in 2026:</strong> received the Zepto
+                  Aces Award (Apr–May) and a co-founder-signed award (June) for
+                  Packerman Metrics.</span
+                >
+              </li>
+              <li>
+                <span
+                  ><strong>Packerman Metrics:</strong> built the backend and data
+                  pipeline for a workforce analytics platform. Designed the APIs
+                  and a near-real-time pipeline on Node.js, Kafka and cron jobs,
+                  refreshing metrics every 5–10 minutes across the dark store
+                  management system and HRMS attendance app, lifting workforce
+                  utilization from <strong>53% to 80%</strong>.</span
+                >
+              </li>
+              <li>
+                <span
+                  ><strong>Closed-loop AI engineering workflow:</strong>
+                  integrated Callstack's open-source agent-device tool so AI
+                  coding agents can run, inspect and debug the app on devices and
+                  simulators. Cut <strong>token usage by 65%</strong>,
+                  <strong>runtime issues by 22%</strong> and
+                  <strong>out-of-memory issues by 36%</strong>. Now building a POC
+                  to run agents on cloud-hosted React Native simulators.</span
+                >
+              </li>
+              <li>
+                <span
+                  ><strong>Fraud Detection SDK:</strong> designed and shipped an
+                  in-house device-fingerprinting SDK with
+                  <strong>&gt;99% accuracy</strong>, replacing a vendor and saving
+                  <strong>$400K USD annually</strong>. Protects millions of
+                  customer and rider sessions across India.
                   <span class="etag">$400K saved</span></span
                 >
               </li>
               <li>
                 <span
-                  ><strong>Auth System:</strong> Designed One Tap Login
-                  improving relogin success by <strong>10%</strong> and order
+                  ><strong>Remote Config service:</strong> built an in-house
+                  replacement for Firebase Remote Config, using React Native and
+                  MMKV on the client, AWS S3 + CloudFront for delivery and a React
+                  dashboard for management. Gives full control over rollouts,
+                  removed the Firebase dependency and serves
+                  <strong>millions of sessions daily</strong>.</span
+                >
+              </li>
+              <li>
+                <span
+                  ><strong>Monet Asset:</strong> built a highly configurable,
+                  backend-driven Premium Contextual Ad Widget generating
+                  <strong>~₹10 lakhs in daily ad revenue</strong>.</span
+                >
+              </li>
+              <li>
+                <span
+                  ><strong>Redux → Zustand:</strong> led the full migration across
+                  the consumer app, reducing JS bundle size by
+                  <strong>803 KB</strong> and APK size by <strong>398 KB</strong>.</span
+                >
+              </li>
+              <li>
+                <span
+                  ><strong>One-tap login:</strong> designed a secure system that
+                  improved re-login success by <strong>10%</strong> and order
                   conversion by <strong>~1.5%</strong>.</span
                 >
               </li>
               <li>
                 <span
-                  ><strong>Redux → Zustand:</strong> Led full migration,
-                  reducing JS bundle by <strong>803 KB</strong> and APK by
-                  <strong>398 KB</strong>.</span
+                  ><strong>Multi-tab search:</strong> engineered multi-tab scoped
+                  search with category-aware React Query caching, raising ATCR by
+                  <strong>21 bps</strong>.</span
                 >
               </li>
               <li>
                 <span
-                  ><strong>JSI / Native:</strong> Built high-perf native modules
-                  in Kotlin & Swift for direct synchronous JS-Native
+                  ><strong>Native modules:</strong> built high-performance modules
+                  in Kotlin and Swift on JSI for synchronous Native ↔ JS
                   communication.</span
                 >
               </li>
               <li>
                 <span
-                  ><strong>UI Performance:</strong> Refactored PCCarouselView
-                  reducing bundle by <strong>160 KB</strong> and render latency
-                  by <strong>0.5ms/card</strong>.</span
+                  ><strong>Pan-India Printing roll-out:</strong> owned the roll-out
+                  across Ops, Backend and Product, improved the warehouse
+                  cycle-count flow, cutting inventory shrinkage by
+                  <strong>2%</strong> and raising accurate damage and quality
+                  marking by <strong>8–10%</strong>.</span
                 >
               </li>
               <li>
                 <span
-                  ><strong>Highlighted Deals Widget:</strong> Built VIP Widget
-                  improving ATCR by <strong>30 bps</strong>.</span
+                  ><strong>Mentorship:</strong> mentored interns on feature
+                  development, covering task scoping, technical guidance and code
+                  reviews through to production.</span
                 >
               </li>
               <li>
                 <span
-                  ><strong>Monet Ad Widget:</strong> Configurable ad widget
-                  generating <strong>₹10 lakhs/day</strong>.</span
-                >
-              </li>
-              <li>
-                <span
-                  ><strong>Multi-tab Search:</strong> Category-aware React Query
-                  caching delivering <strong>+21 bps</strong> avg ATCR.</span
+                  >Stack:
+                  <strong
+                    >React Native, TypeScript, Kotlin, Swift, JSI, Node.js, Kafka,
+                    AWS (S3, CloudFront), React, Zustand, React Query, MMKV,
+                    Fastlane</strong
+                  ></span
                 >
               </li>
             </ul>
@@ -1821,45 +1897,50 @@
             <ul class="ebullets">
               <li>
                 <span
-                  >Built high-performance features and microfrontend
-                  architecture on <strong>unacademy.com</strong> for large-scale
-                  video streaming.</span
+                  ><strong>Home Feed (0-to-1):</strong> led the end-to-end backend
+                  and mobile architecture of the dynamic Home Feed, designing a
+                  Server-Driven UI (SDUI) framework that enabled instant layout
+                  changes and feature rollouts with
+                  <strong>zero app releases</strong>.</span
                 >
               </li>
               <li>
                 <span
-                  >Contributed to <strong>NextLevel</strong> (1M+ downloads) —
-                  search, profile, and jobs modules in React Native.</span
+                  ><strong>Backend services:</strong> built services and JSON
+                  schema contracts with Redis caching, reliably serving widget
+                  payloads to <strong>100K+ DAU</strong>.</span
                 >
               </li>
               <li>
                 <span
-                  >Optimized the search and recommendation backend,
-                  <strong
-                    >resulting in a 10% reduction in load time, improved search
-                    relevance, and a better overall user experience</strong
-                  >.</span
+                  ><strong>Widget engine:</strong> built a modular client-side
+                  engine supporting <strong>15+ dynamic components</strong>, with
+                  list virtualization and persistent offline caching to hold
+                  <strong>60 FPS scrolling</strong> and reduce Time to Interactive
+                  (TTI).</span
                 >
               </li>
               <li>
                 <span
-                  >Improved load time, retention, and DAU via frontend
-                  optimizations and Lighthouse / GSC monitoring,
-                  <strong>reducing LCP by 1.2s and boosting DAU by 6%</strong
-                  >.</span
+                  ><strong>NextLevel app (1M+ downloads):</strong> led development
+                  of core modules, including search, user profile and job
+                  listings, in React Native.</span
                 >
               </li>
               <li>
                 <span
-                  >Led <strong>mWeb optimization</strong> using Next.js,
-                  SSR/CSR, and React Server Components.</span
+                  ><strong>unacademy.com:</strong> built high-performance features
+                  using a microfrontend architecture for large-scale video
+                  streaming, and optimized mobile web with Next.js SSR, CSR and
+                  React Server Components, tracked via Lighthouse and Google Search
+                  Console.</span
                 >
               </li>
               <li>
                 <span
                   >Stack:
                   <strong
-                    >React Native, Next.js, TypeScript, RTK Query, React
+                    >React Native, Next.js, TypeScript, Redis, RTK Query, Redux
                     Toolkit</strong
                   ></span
                 >
@@ -1873,64 +1954,54 @@
             <ul class="ebullets">
               <li>
                 <span
-                  >Built and scaled internal dashboards,
-                  <strong>reducing page load time by 50%</strong>.</span
+                  >Cut internal dashboard page load time by
+                  <strong>50%</strong> through performance work and scaling of the
+                  dashboard systems.</span
                 >
               </li>
               <li>
                 <span
-                  >Developed a <strong>ChatGPT-inspired chatbot</strong> with
-                  OpenAI APIs using Python backend integrations.</span
+                  >Built an <strong>LLM-powered support chatbot</strong> using
+                  OpenAI APIs with Python backend integrations.</span
                 >
               </li>
               <li>
                 <span
-                  >Improved frontend efficiency via modular architecture and
-                  code reviews.</span
+                  >Improved frontend performance and maintainability through a
+                  modular architecture and rigorous code reviews.</span
                 >
               </li>
               <li>
                 <span
                   >Stack:
-                  <strong
-                    >React, Next.js, TypeScript, AWS, Python, PostgreSQL</strong
-                  ></span
+                  <strong>React, Next.js, TypeScript, AWS, Python, PostgreSQL</strong></span
                 >
               </li>
             </ul>
           </div>
           <div class="epanel" id="ep-mela">
-            <div class="ename">Mela (YC S-19)</div>
-            <div class="erole">SWE Intern → Full-time</div>
+            <div class="ename">Mela (YC S19)</div>
+            <div class="erole">Software Engineer (Intern → Full-time)</div>
             <div class="edur">Mar 2021 – Mar 2022 · Bangalore, India</div>
             <ul class="ebullets">
               <li>
                 <span
-                  >Developed and optimized mobile UIs for
-                  <strong>Mela and Namaste Business</strong>, achieving
-                  <strong>100K+ downloads</strong>.</span
+                  >Led the initial development of
+                  <strong>Namaste Business</strong>, building core features, product
+                  metrics and data-driven dashboards.</span
                 >
               </li>
               <li>
                 <span
-                  >Did <strong>0-to-1 development</strong> of the Namaste
-                  Business app with full ownership of major features and theming
-                  in app, driving product growth and successfully scaling to
-                  <strong>100K+ downloads</strong>.</span
+                  >Built and optimized mobile UIs for
+                  <strong>Mela and Namaste Business</strong>, with
+                  <strong>100K+ combined downloads</strong>; worked directly with the
+                  CTO and design team.</span
                 >
               </li>
               <li>
                 <span
-                  >Collaborated closely with the CTO and design team to deliver
-                  polished production features.</span
-                >
-              </li>
-              <li>
-                <span
-                  >Stack:
-                  <strong
-                    >React Native, JavaScript, UI Optimization</strong
-                  ></span
+                  >Stack: <strong>React Native, JavaScript</strong></span
                 >
               </li>
             </ul>
@@ -1958,12 +2029,28 @@
         <div class="pcard">
           <div class="pca ca-g"></div>
           <div class="pwm">01</div>
+          <div class="parea">Workforce Analytics · Zepto</div>
+          <div class="ptitle">Packerman Metrics</div>
+          <div class="pdesc">
+            Workforce analytics platform for the dark store management system and
+            HRMS attendance app. Designed the APIs and a near-real-time pipeline on
+            Node.js, Kafka and cron jobs, refreshing metrics every 5–10 minutes.
+            Earned a co-founder-signed award in June 2026 for this work.
+          </div>
+          <div class="pimp">
+            <div class="pin">53% → 80%</div>
+            <div class="pilbl">Warehouse workforce<br />utilization lift</div>
+          </div>
+        </div>
+        <div class="pcard">
+          <div class="pca ca-o"></div>
+          <div class="pwm">02</div>
           <div class="parea">Cost Savings · Fraud</div>
           <div class="ptitle">In-House Fraud Detection SDK</div>
           <div class="pdesc">
-            Designed and implemented a proprietary Device Fingerprinting SDK
-            replacing a third-party vendor. Built with cross-functional teams
-            across Product, Rider, and Backend.
+            Designed and shipped a proprietary device-fingerprinting SDK that
+            replaced a vendor solution, with over 99% accuracy. Protects millions of
+            customer and rider sessions across India.
           </div>
           <div class="pimp">
             <div class="pin">$400K</div>
@@ -1971,127 +2058,189 @@
           </div>
         </div>
         <div class="pcard">
-          <div class="pca ca-o"></div>
-          <div class="pwm">02</div>
-          <div class="parea">Growth · Onboarding</div>
-          <div class="ptitle">Google Phone Hint Optimization</div>
+          <div class="pca ca-p"></div>
+          <div class="pwm">03</div>
+          <div class="parea">AI Engineering · Developer Workflow</div>
+          <div class="ptitle">AI Agent Workflow (agent-device)</div>
           <div class="pdesc">
-            Synchronized Truecaller and Google Phone Hint, fixing key issues to
-            deliver a seamless FTB experience. One of the highest single-feature
-            growth lifts on platform.
+            Integrated Callstack's open-source agent-device tool so AI coding agents
+            can run, inspect and debug the app on devices and simulators. Now
+            building a POC to run agents on cloud-hosted React Native simulators.
           </div>
           <div class="pimp">
-            <div class="pin">+6.70%</div>
-            <div class="pilbl">FTB Signups<br />Non-Truecaller cohort</div>
+            <div class="pin">−65%</div>
+            <div class="pilbl">Token usage cut<br />−22% runtime · −36% OOM issues</div>
+          </div>
+        </div>
+        <div class="pcard">
+          <div class="pca ca-g"></div>
+          <div class="pwm">04</div>
+          <div class="parea">Platform · Remote Config</div>
+          <div class="ptitle">In-House Remote Config</div>
+          <div class="pdesc">
+            Replaced Firebase Remote Config with a React Native and MMKV client, AWS
+            S3 and CloudFront delivery, and a React dashboard for rollout control.
+            Removed the Firebase dependency.
+          </div>
+          <div class="pimp">
+            <div class="pin">Millions</div>
+            <div class="pilbl">Sessions served daily<br />across consumer and fulfillment apps</div>
+          </div>
+        </div>
+        <div class="pcard">
+          <div class="pca ca-o"></div>
+          <div class="pwm">05</div>
+          <div class="parea">Revenue · Ad Widget</div>
+          <div class="ptitle">Monet Asset</div>
+          <div class="pdesc">
+            Built a highly configurable, backend-driven Premium Contextual Ad Widget
+            that generates daily ad revenue.
+          </div>
+          <div class="pimp">
+            <div class="pin">~₹10L/day</div>
+            <div class="pilbl">Daily ad revenue<br />from the widget</div>
+          </div>
+        </div>
+        <div class="pcard">
+          <div class="pca ca-p"></div>
+          <div class="pwm">06</div>
+          <div class="parea">Growth · Authentication</div>
+          <div class="ptitle">One-Tap Login System</div>
+          <div class="pdesc">
+            Designed a secure One-tap login system that improved re-login success and
+            order conversion.
+          </div>
+          <div class="pimp">
+            <div class="pin">+10%</div>
+            <div class="pilbl">Re-login success<br />~1.5% order conversion</div>
+          </div>
+        </div>
+        <div class="pcard">
+          <div class="pca ca-g"></div>
+          <div class="pwm">07</div>
+          <div class="parea">App Size · Architecture</div>
+          <div class="ptitle">Redux → Zustand Migration</div>
+          <div class="pdesc">
+            Led the full migration from Redux and Redux-Saga to Zustand across the
+            consumer app, cutting both JS bundle and APK size.
+          </div>
+          <div class="pimp">
+            <div class="pin">803 KB</div>
+            <div class="pilbl">JS bundle cut<br />APK reduced by 398 KB</div>
+          </div>
+        </div>
+        <div class="pcard">
+          <div class="pca ca-o"></div>
+          <div class="pwm">08</div>
+          <div class="parea">Platform · Server-Driven UI</div>
+          <div class="ptitle">Home Feed (Unacademy)</div>
+          <div class="pdesc">
+            Led the 0-to-1 backend and mobile architecture of the dynamic Home Feed,
+            a Server-Driven UI framework that enables instant layout changes and
+            feature rollouts with zero app releases.
+          </div>
+          <div class="pimp">
+            <div class="pin">100K+</div>
+            <div class="pilbl">Daily active users served<br />with Redis-cached payloads</div>
+          </div>
+        </div>
+        <div class="pcard">
+          <div class="pca ca-p"></div>
+          <div class="pwm">09</div>
+          <div class="parea">Mobile · Unacademy</div>
+          <div class="ptitle">NextLevel App</div>
+          <div class="pdesc">
+            Led development of the core modules, including search, user profile and
+            job listings, in React Native.
+          </div>
+          <div class="pimp">
+            <div class="pin">1M+</div>
+            <div class="pilbl">Downloads<br />across the app</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LATEST WORKS -->
+    <section id="works">
+      <div class="slbl">From GitHub</div>
+      <div class="stitle reveal">
+        Latest
+        <em
+          style="
+            font-family: &quot;Instrument Serif&quot;, serif;
+            font-style: italic;
+            color: var(--accent);
+            transition: color 0.5s;
+          "
+          >works</em
+        >
+      </div>
+      <div class="pgrid p4 rc">
+        <div class="pcard">
+          <div class="pca ca-g"></div>
+          <div class="pwm">01</div>
+          <div class="parea">2026 · React Native · TypeScript</div>
+          <div class="ptitle">
+            <a href="https://github.com/TANAYTAPANSHU/stocksim" target="_blank" rel="noopener">StockSim</a>
+          </div>
+          <div class="pdesc">
+            Practice stock-trading app with fictional stocks, a watchlist,
+            portfolio P&amp;L and order history. Not real trading. Also a proof
+            of concept for AI-agent device tests and iOS simulator previews.
+          </div>
+          <div class="wfoot">
+            <a class="wlink" href="https://github.com/TANAYTAPANSHU/stocksim" target="_blank" rel="noopener">View repo ↗</a>
+          </div>
+        </div>
+        <div class="pcard">
+          <div class="pca ca-o"></div>
+          <div class="pwm">02</div>
+          <div class="parea">2023 · Next.js · WebRTC</div>
+          <div class="ptitle">
+            <a href="https://github.com/TANAYTAPANSHU/video-conference-webapp" target="_blank" rel="noopener">Samvad Connect</a>
+          </div>
+          <div class="pdesc">
+            WebRTC web app built with Next.js for making anonymous calls without
+            sharing personal details.
+          </div>
+          <div class="wfoot">
+            <a class="wlink" href="https://github.com/TANAYTAPANSHU/video-conference-webapp" target="_blank" rel="noopener">View repo ↗</a>
           </div>
         </div>
         <div class="pcard">
           <div class="pca ca-p"></div>
           <div class="pwm">03</div>
-          <div class="parea">App Size · Architecture</div>
-          <div class="ptitle">Redux → Zustand Migration</div>
-          <div class="pdesc">
-            Led complete state management migration in 7 phases: Auth, Order,
-            Payment, Store Info, and more. Coordinated with Cart, Payment, and
-            QA teams throughout.
+          <div class="parea">2023 · Node.js · Socket.IO</div>
+          <div class="ptitle">
+            <a href="https://github.com/TANAYTAPANSHU/whiteboard-Server" target="_blank" rel="noopener">Whiteboard Server</a>
           </div>
-          <div class="pimp">
-            <div class="pin">803 KB</div>
-            <div class="pilbl">JS bundle reduced<br />APK cut by 398 KB</div>
+          <div class="pdesc">
+            Express and Socket.IO backend for the sketchbook (Whiteboard) app.
+          </div>
+          <div class="wfoot">
+            <a class="wlink" href="https://github.com/TANAYTAPANSHU/whiteboard-Server" target="_blank" rel="noopener">View repo ↗</a>
           </div>
         </div>
         <div class="pcard">
-          <div class="pca ca-o"></div>
+          <div class="pca ca-g"></div>
           <div class="pwm">04</div>
-          <div class="parea">Monet · Revenue</div>
-          <div class="ptitle">Single Premium Contextual Ad Widget</div>
+          <div class="parea">2023 · Next.js · Redux Toolkit</div>
+          <div class="ptitle">
+            <a href="https://github.com/TANAYTAPANSHU/whiteboard" target="_blank" rel="noopener">Whiteboard</a>
+          </div>
           <div class="pdesc">
-            Built a UI-driven, highly configurable ad widget from scratch. Led
-            backend discussions, finalized with product/design, coordinated QA
-            for on-time delivery.
+            Web app to create and collaborate on digital sketches, with undo and
+            redo and sketch downloads.
           </div>
-          <div class="pimp">
-            <div class="pin">₹10L/day</div>
-            <div class="pilbl">Daily ad revenue<br />actively contributing</div>
-          </div>
-        </div>
-        <div class="pcard">
-          <div class="pca ca-p"></div>
-          <div class="pwm">05</div>
-          <div class="parea">Growth · Engagement</div>
-          <div class="ptitle">Highlighted Deals (VIP) Widget</div>
-          <div class="pdesc">
-            Engineered a new Horizontal Product Card and Highlighted Deals
-            Widget end-to-end from TRD creation, coordinating backend, QA, and
-            analytics for shipment.
-          </div>
-          <div class="pimp">
-            <div class="pin">+30 bps</div>
-            <div class="pilbl">ATCR improvement<br />post launch</div>
-          </div>
-        </div>
-        <div class="pcard">
-          <div class="pca ca-g"></div>
-          <div class="pwm">06</div>
-          <div class="parea">Performance · UI</div>
-          <div class="ptitle">PCCarouselView Performance Refactor</div>
-          <div class="pdesc">
-            Proactively profiled components and discovered an unnecessary
-            Carousel dependency causing 0.5ms overhead on every single product
-            card across the app.
-          </div>
-          <div class="pimp">
-            <div class="pin">−0.5ms</div>
-            <div class="pilbl">Per-card render<br />platform-wide</div>
-          </div>
-        </div>
-        <div class="pcard">
-          <div class="pca ca-o"></div>
-          <div class="pwm">07</div>
-          <div class="parea">Supply Chain · Operations</div>
-          <div class="ptitle">Pan-India Printing Feature</div>
-          <div class="pdesc">
-            Took complete ownership of the Pan-India Printing Feature roll-out,
-            collaborating with Operations, Backend, and Product teams to
-            successfully launch a critical supply chain tool, enhancing
-            operational capabilities nationwide.
-          </div>
-          <div class="pimp">
-            <div class="pin">100%</div>
-            <div class="pilbl">Ownership & Pan-<br />India roll-out</div>
-          </div>
-        </div>
-        <div class="pcard">
-          <div class="pca ca-p"></div>
-          <div class="pwm">08</div>
-          <div class="parea">Search · Discovery</div>
-          <div class="ptitle">Multi-Tab Scoped Search</div>
-          <div class="pdesc">
-            Engineered multi-tab search with category-aware React Query caching
-            to ensure data freshness and reduce latency. Modified network
-            requests for contextual presearch layouts.
-          </div>
-          <div class="pimp">
-            <div class="pin">+21 bps</div>
-            <div class="pilbl">Average ATCR<br />improvement</div>
-          </div>
-        </div>
-        <div class="pcard">
-          <div class="pca ca-g"></div>
-          <div class="pwm">09</div>
-          <div class="parea">Native · JSI Engineering</div>
-          <div class="ptitle">JSI Native Modules (Kotlin & Swift)</div>
-          <div class="pdesc">
-            Built high-performance native modules using Kotlin and Swift with
-            JSI (JavaScript Interface), enabling direct synchronous
-            communication between Native and JS realms.
-          </div>
-          <div class="pimp">
-            <div class="pin">JSI</div>
-            <div class="pilbl">Synchronous<br />Native ↔ JS bridge</div>
+          <div class="wfoot">
+            <a class="wlink" href="https://github.com/TANAYTAPANSHU/whiteboard" target="_blank" rel="noopener">View repo ↗</a>
           </div>
         </div>
       </div>
+      <p class="snap">
+        <a class="wlink" href="https://github.com/tanaytapanshu?tab=repositories" target="_blank" rel="noopener">View all public repos on GitHub ↗</a>
+      </p>
     </section>
 
     <!-- SKILLS -->
@@ -2211,6 +2360,17 @@
             <path d="M9 18c-4.51 2-5-2-7-2" /></svg
           >GitHub</a
         >
+        <a
+          href="https://x.com/TapanshuTanay"
+          target="_blank"
+          rel="noopener"
+          class="clink mag"
+          ><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+            /></svg
+          >X</a
+        >
         <a href="tel:+919123114339" class="clink mag"
           ><svg
             width="14"
@@ -2229,7 +2389,7 @@
     </section>
 
     <footer>
-      <span>© 2025 Tanay Tapanshu</span>
+      <span>© 2026 Tanay Tapanshu</span>
       <span>Product Minded Software Engineer · Bangalore, India</span>
       <span>Built with precision</span>
     </footer>
